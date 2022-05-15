@@ -1,0 +1,20 @@
+# Write a Program to the find sum of series 5^2+10^2+15^2+.....N^2
+package Assessment;
+
+import java.util.Scanner;
+
+public class Power {
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int num=s.nextInt();
+        int ans,sum=0;
+        for(int i=0;i<=num;i++){
+            if(i%5==0) {
+                ans = (int) Math.pow(i, 2);
+                sum += ans;
+            }
+        }
+        System.out.println(sum);
+    }
+}
